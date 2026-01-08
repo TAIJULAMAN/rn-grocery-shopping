@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { View, ActivityIndicator } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Redirect } from 'expo-router';
+import SplashScreen from '@/components/SplashScreen';
 
 export default function Index() {
     const [loading, setLoading] = useState(true);
@@ -10,9 +11,12 @@ export default function Index() {
     useEffect(() => {
         const checkFirstLaunch = async () => {
             try {
-                const value = await AsyncStorage.getItem('hasLaunched');
+                const [value] = await Promise.all([
+                    AsyncStorage.getItem('hasLaunched'),
+                    new Promise(resolve => setTimeout(resolve, 3000))
+                ]);
+
                 if (value !== null) {
-                    // setHasLaunched(true); // Uncomment to enable one-time onboarding logic
                 }
             } catch (e) {
                 console.error('Failed to load storage', e);
@@ -25,11 +29,7 @@ export default function Index() {
     }, []);
 
     if (loading) {
-        return (
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <ActivityIndicator size="large" />
-            </View>
-        );
+        return <SplashScreen />;
     }
 
     if (!hasLaunched) {

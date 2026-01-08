@@ -15,14 +15,16 @@ export default function OnboardingStepTwo({ onFinish }: OnboardingStepTwoProps) 
         <SafeAreaView style={styles.container}>
             <View style={styles.contentContainer}>
                 <View style={styles.imageContainer}>
-                    <View style={styles.imagePlaceholder}>
-                        <Ionicons name="image-outline" size={80} color="#9CA3AF" />
-                    </View>
+                    <Image
+                        source={require('@/assets/images/Trolley.png')}
+                        style={{ width: 280, height: 280 }}
+                        contentFit="contain"
+                    />
                 </View>
 
                 <View style={styles.textSection}>
                     <Text style={styles.title}>
-                        Your holiday{'\n'}shopping{'\n'}delivered to your{'\n'}home
+                        Your holiday shopping{'\n'}delivered to your{'\n'}home
                     </Text>
                     <Text style={styles.subtitle}>
                         There's something for everyone{'\n'}to enjoy with Sweet Shop{'\n'}Favourites
@@ -30,7 +32,6 @@ export default function OnboardingStepTwo({ onFinish }: OnboardingStepTwoProps) 
                     <View style={styles.paginationContainer}>
                         <View style={[styles.dot, styles.inactiveDot]} />
                         <View style={[styles.dot, styles.activeDot]} />
-                        <View style={[styles.dot, styles.inactiveDot]} />
                     </View>
                 </View>
 
@@ -97,17 +98,18 @@ const styles = StyleSheet.create({
     paginationContainer: {
         flexDirection: 'row',
         gap: 8,
+        marginBottom: 20,
     },
     dot: {
         height: 4,
         borderRadius: 2,
     },
     activeDot: {
-        backgroundColor: '#4B5563', // Darker gray for active
+        backgroundColor: '#4B5563',
         width: 24,
     },
     inactiveDot: {
-        backgroundColor: '#E5E7EB', // Light gray for inactive
+        backgroundColor: '#E5E7EB',
         width: 20,
     },
     buttonContainer: {

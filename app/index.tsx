@@ -12,7 +12,7 @@ export default function Index() {
             try {
                 const value = await AsyncStorage.getItem('hasLaunched');
                 if (value !== null) {
-                    setHasLaunched(true);
+                    // setHasLaunched(true); // Uncomment to enable one-time onboarding logic
                 }
             } catch (e) {
                 console.error('Failed to load storage', e);

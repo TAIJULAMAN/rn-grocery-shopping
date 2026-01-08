@@ -1,4 +1,5 @@
 import React from 'react';
+import { Image } from 'expo-image';
 import { StyleSheet, Text, View, Dimensions, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -26,14 +27,15 @@ export default function OnboardingStepOne({ onNext }: OnboardingStepOneProps) {
                     <View style={styles.paginationContainer}>
                         <View style={[styles.dot, styles.activeDot]} />
                         <View style={[styles.dot, styles.inactiveDot]} />
-                        <View style={[styles.dot, styles.inactiveDot]} />
                     </View>
                 </View>
 
                 <View style={styles.imageContainer}>
-                    <View style={styles.imagePlaceholder}>
-                        <Ionicons name="image-outline" size={80} color="#7CA1F7" />
-                    </View>
+                    <Image
+                        source={require('@/assets/images/Trolley.png')}
+                        style={{ width: 280, height: 280 }}
+                        contentFit="contain"
+                    />
                 </View>
 
                 <View style={styles.buttonContainer}>
@@ -113,7 +115,8 @@ const styles = StyleSheet.create({
         opacity: 0.6,
     },
     buttonContainer: {
-        marginBottom: 20,
+        marginBottom: 10,
+        marginTop: 10,
     },
     button: {
         flexDirection: 'row',

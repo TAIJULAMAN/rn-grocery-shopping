@@ -3,6 +3,9 @@ import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 
+import { useRouter } from 'expo-router';
+
+// Mock Data
 type Category = {
     id: string;
     name: string;
@@ -21,8 +24,13 @@ const CATEGORIES: Category[] = [
 ];
 
 export default function CategoriesScreen() {
+    const router = useRouter();
+
     const renderItem = ({ item }: { item: Category }) => (
-        <TouchableOpacity style={styles.categoryCard}>
+        <TouchableOpacity
+            style={styles.categoryCard}
+            onPress={() => router.push({ pathname: '/category/[id]', params: { id: item.id, name: item.name } })}
+        >
             <View style={styles.iconContainer}>
                 <Ionicons name={item.icon} size={40} color="#F9B023" />
             </View>

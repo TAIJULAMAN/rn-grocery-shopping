@@ -3,8 +3,6 @@ import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 
-// Reuse mock data for wishlist
-// Reuse mock data for wishlist
 type WishlistItem = {
     id: string;
     name: string;
@@ -17,6 +15,15 @@ const WISHLIST_ITEMS: WishlistItem[] = [
     { id: '1', name: 'Fresh Lemon', subtitle: 'Organic', price: 12, icon: 'image-outline' },
     { id: '2', name: 'Green Tea', subtitle: '2 Packages', price: 6, icon: 'leaf-outline' },
     { id: '3', name: 'Fresh Lime', subtitle: 'Organic', price: 10, icon: 'image-outline' },
+    { id: '4', name: 'Fresh Lemon', subtitle: 'Organic', price: 12, icon: 'image-outline' },
+    { id: '5', name: 'Green Tea', subtitle: '2 Packages', price: 6, icon: 'leaf-outline' },
+    { id: '6', name: 'Fresh Lime', subtitle: 'Organic', price: 10, icon: 'image-outline' },
+    { id: '7', name: 'Fresh Lemon', subtitle: 'Organic', price: 12, icon: 'image-outline' },
+    { id: '8', name: 'Green Tea', subtitle: '2 Packages', price: 6, icon: 'leaf-outline' },
+    { id: '9', name: 'Fresh Lime', subtitle: 'Organic', price: 10, icon: 'image-outline' },
+    { id: '10', name: 'Fresh Lemon', subtitle: 'Organic', price: 12, icon: 'image-outline' },
+    { id: '11', name: 'Green Tea', subtitle: '2 Packages', price: 6, icon: 'leaf-outline' },
+    { id: '12', name: 'Fresh Lime', subtitle: 'Organic', price: 10, icon: 'image-outline' },
 ];
 
 export default function FavouriteScreen() {

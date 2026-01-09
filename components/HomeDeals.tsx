@@ -19,6 +19,9 @@ export default function HomeDeals() {
                 <View style={styles.dealCard}>
                     <View style={styles.imageContainer}>
                         <Ionicons name="image-outline" size={50} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                         <TouchableOpacity style={styles.addButton}>
                             <Ionicons name="add" size={20} color="#fff" />
                         </TouchableOpacity>
@@ -33,6 +36,9 @@ export default function HomeDeals() {
                 <View style={styles.dealCard}>
                     <View style={styles.imageContainer}>
                         <Ionicons name="image-outline" size={50} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                         <TouchableOpacity style={styles.addButton}>
                             <Ionicons name="add" size={20} color="#fff" />
                         </TouchableOpacity>
@@ -47,6 +53,9 @@ export default function HomeDeals() {
                 <View style={styles.dealCard}>
                     <View style={styles.imageContainer}>
                         <Ionicons name="image-outline" size={50} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                         <TouchableOpacity style={styles.addButton}>
                             <Ionicons name="add" size={20} color="#fff" />
                         </TouchableOpacity>
@@ -60,6 +69,9 @@ export default function HomeDeals() {
                 <View style={styles.dealCard}>
                     <View style={styles.imageContainer}>
                         <Ionicons name="image-outline" size={50} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                         <TouchableOpacity style={styles.addButton}>
                             <Ionicons name="add" size={20} color="#fff" />
                         </TouchableOpacity>
@@ -74,6 +86,9 @@ export default function HomeDeals() {
                 <View style={styles.dealCard}>
                     <View style={styles.imageContainer}>
                         <Ionicons name="image-outline" size={50} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                         <TouchableOpacity style={styles.addButton}>
                             <Ionicons name="add" size={20} color="#fff" />
                         </TouchableOpacity>
@@ -88,6 +103,9 @@ export default function HomeDeals() {
                 <View style={styles.dealCard}>
                     <View style={styles.imageContainer}>
                         <Ionicons name="image-outline" size={50} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                         <TouchableOpacity style={styles.addButton}>
                             <Ionicons name="add" size={20} color="#fff" />
                         </TouchableOpacity>
@@ -101,6 +119,9 @@ export default function HomeDeals() {
                 <View style={styles.dealCard}>
                     <View style={styles.imageContainer}>
                         <Ionicons name="image-outline" size={50} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                         <TouchableOpacity style={styles.addButton}>
                             <Ionicons name="add" size={20} color="#fff" />
                         </TouchableOpacity>
@@ -115,6 +136,9 @@ export default function HomeDeals() {
                 <View style={styles.dealCard}>
                     <View style={styles.imageContainer}>
                         <Ionicons name="image-outline" size={50} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                         <TouchableOpacity style={styles.addButton}>
                             <Ionicons name="add" size={20} color="#fff" />
                         </TouchableOpacity>
@@ -129,6 +153,9 @@ export default function HomeDeals() {
                 <View style={styles.dealCard}>
                     <View style={styles.imageContainer}>
                         <Ionicons name="image-outline" size={50} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                         <TouchableOpacity style={styles.addButton}>
                             <Ionicons name="add" size={20} color="#fff" />
                         </TouchableOpacity>
@@ -173,6 +200,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginBottom: 12,
         position: 'relative',
+    },
+    wishlistButton: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
     },
     addButton: {
         position: 'absolute',

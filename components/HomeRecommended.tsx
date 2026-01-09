@@ -11,7 +11,7 @@ export default function HomeRecommended() {
                 showsHorizontalScrollIndicator={false}
                 style={styles.recommendedScroll}
                 contentContainerStyle={styles.recommendedContainer}
-                snapToInterval={156} // 140 (card width) + 16 (margin)
+                snapToInterval={156}
                 decelerationRate="fast"
             >
 
@@ -19,6 +19,9 @@ export default function HomeRecommended() {
                 <View style={styles.productCard}>
                     <View style={styles.productImageContainer}>
                         <Ionicons name="image-outline" size={40} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.productTitle}>Fresh Lemon</Text>
                     <Text style={styles.productSubtitle}>Organic</Text>
@@ -34,6 +37,9 @@ export default function HomeRecommended() {
                 <View style={styles.productCard}>
                     <View style={styles.productImageContainer}>
                         <Ionicons name="image-outline" size={40} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.productTitle}>Green Tea</Text>
                     <Text style={styles.productSubtitle}>Organic</Text>
@@ -49,55 +55,119 @@ export default function HomeRecommended() {
                 <View style={styles.productCard}>
                     <View style={styles.productImageContainer}>
                         <Ionicons name="image-outline" size={40} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.productTitle}>Fresh Lime</Text>
                     <Text style={styles.productSubtitle}>Organic</Text>
                     <View style={styles.productFooter}>
                         <Text style={styles.productPrice}><Text style={styles.priceBold}>$10</Text></Text>
+                        <TouchableOpacity style={styles.addButton}>
+                            <Ionicons name="add" size={20} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
                 {/* Product Card 4 */}
                 <View style={styles.productCard}>
                     <View style={styles.productImageContainer}>
                         <Ionicons name="image-outline" size={40} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.productTitle}>Fresh Lime</Text>
                     <Text style={styles.productSubtitle}>Organic</Text>
                     <View style={styles.productFooter}>
                         <Text style={styles.productPrice}><Text style={styles.priceBold}>$10</Text></Text>
+                        <TouchableOpacity style={styles.addButton}>
+                            <Ionicons name="add" size={20} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
                 {/* Product Card 5 */}
                 <View style={styles.productCard}>
                     <View style={styles.productImageContainer}>
                         <Ionicons name="image-outline" size={40} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.productTitle}>Fresh Lime</Text>
                     <Text style={styles.productSubtitle}>Organic</Text>
                     <View style={styles.productFooter}>
                         <Text style={styles.productPrice}><Text style={styles.priceBold}>$10</Text></Text>
+                        <TouchableOpacity style={styles.addButton}>
+                            <Ionicons name="add" size={20} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
                 {/* Product Card 6 */}
                 <View style={styles.productCard}>
                     <View style={styles.productImageContainer}>
                         <Ionicons name="image-outline" size={40} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.productTitle}>Fresh Lime</Text>
                     <Text style={styles.productSubtitle}>Organic</Text>
                     <View style={styles.productFooter}>
                         <Text style={styles.productPrice}><Text style={styles.priceBold}>$10</Text></Text>
+                        <TouchableOpacity style={styles.addButton}>
+                            <Ionicons name="add" size={20} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
                 {/* Product Card 7 */}
                 <View style={styles.productCard}>
                     <View style={styles.productImageContainer}>
                         <Ionicons name="image-outline" size={40} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.productTitle}>Fresh Lime</Text>
                     <Text style={styles.productSubtitle}>Organic</Text>
                     <View style={styles.productFooter}>
                         <Text style={styles.productPrice}><Text style={styles.priceBold}>$10</Text></Text>
+                        <TouchableOpacity style={styles.addButton}>
+                            <Ionicons name="add" size={20} color="#fff" />
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                {/* Product Card 8 */}
+                <View style={styles.productCard}>
+                    <View style={styles.productImageContainer}>
+                        <Ionicons name="image-outline" size={40} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
+                    </View>
+                    <Text style={styles.productTitle}>Fresh Lime</Text>
+                    <Text style={styles.productSubtitle}>Organic</Text>
+                    <View style={styles.productFooter}>
+                        <Text style={styles.productPrice}><Text style={styles.priceBold}>$10</Text></Text>
+                        <TouchableOpacity style={styles.addButton}>
+                            <Ionicons name="add" size={20} color="#fff" />
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                {/* Product Card 9 */}
+                <View style={styles.productCard}>
+                    <View style={styles.productImageContainer}>
+                        <Ionicons name="image-outline" size={40} color="#D1D5DB" />
+                        <TouchableOpacity style={styles.wishlistButton}>
+                            <Ionicons name="heart-outline" size={18} color="#FFC107" />
+                        </TouchableOpacity>
+                    </View>
+                    <Text style={styles.productTitle}>Fresh Lime</Text>
+                    <Text style={styles.productSubtitle}>Organic</Text>
+                    <View style={styles.productFooter}>
+                        <Text style={styles.productPrice}><Text style={styles.priceBold}>$10</Text></Text>
+                        <TouchableOpacity style={styles.addButton}>
+                            <Ionicons name="add" size={20} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
 
@@ -134,6 +204,12 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 10,
+        position: 'relative',
+    },
+    wishlistButton: {
+        position: 'absolute',
+        top: 0,
+        right: 0,
     },
     productTitle: {
         fontSize: 14,

@@ -4,7 +4,6 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 
-// Mock Product Data (Reusing structure from HomeRecommended)
 type Product = {
     id: string;
     name: string;

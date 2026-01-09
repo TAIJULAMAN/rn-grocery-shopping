@@ -1,4 +1,4 @@
-# Grocery Hopping - React Native App
+# Grocery Shopping - React Native App
 
 A modern, feature-rich grocery shopping application built with React Native, Expo, and TypeScript. This app provides a seamless user experience for browsing products, managing a cart, and processing payments, along with a complete user authentication and profile management system.
 

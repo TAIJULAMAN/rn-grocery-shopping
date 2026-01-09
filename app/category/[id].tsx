@@ -59,7 +59,7 @@ export default function CategoryDetails() {
                         <Ionicons name="chevron-back" size={24} color="#1E222B" />
                     </TouchableOpacity>
                     <Text style={styles.headerTitle}>{name || 'Category Details'}</Text>
-                    <TouchableOpacity style={styles.cartButton}>
+                    <TouchableOpacity style={styles.cartButton} onPress={() => router.push('/cart')}>
                         <Ionicons name="cart-outline" size={24} color="#1E222B" />
                     </TouchableOpacity>
                 </View>

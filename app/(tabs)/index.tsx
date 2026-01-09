@@ -1,12 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, TextInput, Image as RNImage } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TextInput, Image as RNImage, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import HomeBanner from '@/components/HomeBanner';
 import HomeRecommended from '@/components/HomeRecommended';
 import HomeDeals from '@/components/HomeDeals';
 
+import { useRouter } from 'expo-router';
+
 export default function HomeScreen() {
+  const router = useRouter();
   return (
     <View style={styles.container}>
       {/* Header Section */}
@@ -17,10 +20,12 @@ export default function HomeScreen() {
             <View style={styles.topRow}>
               <Text style={styles.greetingText}>Hey, Halal</Text>
               <View style={styles.cartContainer}>
-                <Ionicons name="cart-outline" size={28} color="#fff" />
-                <View style={styles.badge}>
-                  <Text style={styles.badgeText}>3</Text>
-                </View>
+                <TouchableOpacity onPress={() => router.push('/cart')}>
+                  <Ionicons name="cart-outline" size={28} color="#fff" />
+                  <View style={styles.badge}>
+                    <Text style={styles.badgeText}>3</Text>
+                  </View>
+                </TouchableOpacity>
               </View>
             </View>
 

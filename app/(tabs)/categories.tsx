@@ -44,7 +44,7 @@ export default function CategoriesScreen() {
                 <SafeAreaView edges={['top']} style={styles.safeArea}>
                     <View style={styles.headerContent}>
                         <Text style={styles.headerTitle}>Categories</Text>
-                        <TouchableOpacity style={styles.cartButton}>
+                        <TouchableOpacity style={styles.cartButton} onPress={() => router.push('/cart')}>
                             <Ionicons name="cart-outline" size={24} color="#fff" />
                         </TouchableOpacity>
                     </View>

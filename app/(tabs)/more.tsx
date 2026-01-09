@@ -10,7 +10,7 @@ export default function MoreScreen() {
     const renderMenuItem = (title: string, icon: keyof typeof Ionicons.glyphMap, route?: string) => (
         <TouchableOpacity
             style={styles.menuItem}
-            onPress={() => route ? router.push(route) : null}
+            onPress={() => route ? router.push(route as any) : null}
         >
             <View style={styles.menuItemLeft}>
                 <View style={styles.iconContainer}>
@@ -34,7 +34,7 @@ export default function MoreScreen() {
                 {renderMenuItem("Edit Profile", "person-outline", "/profile/edit")}
                 {renderMenuItem("My Orders", "cube-outline", "/orders")}
                 {renderMenuItem("Change Password", "lock-closed-outline", "/profile/change-password")}
-                {renderMenuItem("Logout", "log-out-outline")}
+                {renderMenuItem("Logout", "log-out-outline", "/auth/sign-in")}
             </ScrollView>
         </View>
     );
